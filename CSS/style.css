@@ -1,0 +1,564 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3,
+p {
+  font-family: var(--Rubik);
+
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-family: var(--Tenor-sans);
+  font-weight: lighter;
+}
+
+ul {
+  list-style: none;
+}
+
+.separator-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.separator-section span {
+  border: 0.1px solid gray;
+  width: 10rem;
+  margin: 20px 5px;
+}
+
+/*  vp header*/
+
+.vp-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/frame.jpg) center center/cover;
+  height: 25rem;
+}
+
+.vp-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vp-logo a {
+  color: white;
+}
+
+.name {
+  color: #ddd;
+  font-family: var(--Tenor-sans);
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background: rgba(14, 133, 202, 0.479);
+  border-radius: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  padding: 0 2rem;
+}
+
+.menu ul li a {
+  color: white;
+  font-size: 20px;
+  font-family: var(--open-sans, sans-serif);
+}
+
+.menu ul li a:hover {
+  color: #47b8d6;
+  transition: 0.45s;
+}
+
+.logo-img {
+  max-width: 5rem;
+  padding: 1rem;
+}
+
+/* info */
+
+.container-info {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.img-find,
+.img-estimate,
+.img-rental {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-estimate,
+.logo-find,
+.logo-rental {
+  width: 20%;
+}
+
+.text-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.text-offer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.offer-container-btn {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.buy-btn,
+.rent-btn {
+  padding: 10px;
+  background-color: #47b8d6;
+  border: 1px solid #47b8d6;
+  border-radius: 5px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.buy-btn:hover {
+  background: #1e81b0;
+  border: 1px solid #1e81b0;
+}
+
+.rent-btn:hover {
+  background: #1e81b0;
+  border: 1px solid #1e81b0;
+}
+
+.more-info-container-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.more-info {
+  background: #1e81b0;
+  padding: 10px;
+  border: 1px solid #1e81b0;
+  border-radius: 5px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  color: white;
+}
+
+.more-info:hover {
+  background: #47b8d6;
+  border: 1px solid #47b8d6;
+}
+
+.estimate-container-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.estimate-btn {
+  background: #eab676;
+  color: white;
+  padding: 10px;
+  border: 1px solid #eab676;
+  border-radius: 5px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.estimate-btn:hover {
+  background: #ee9754;
+}
+
+/*-----offer-----*/
+
+.offer {
+  padding: 5rem 2rem 5rem 2rem;
+}
+
+.title-last-offers {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.title-last-offers:hover {
+  color: #47b8d6;
+}
+
+.offer-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.offer-elem {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  margin: 1rem;
+  flex: 1;
+}
+
+.offer-elem-text {
+  padding: 2rem;
+  text-align: center;
+}
+.offer-elem-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.offer-separator {
+  margin: 1rem auto;
+  height: 1px;
+  width: 50px;
+  background: #333;
+}
+
+/* review*/
+
+/*-----news-----*/
+
+.container-news {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.container-news > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.news-title:hover {
+  color: #47b8d6;
+}
+
+.news-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-news-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.title-news {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.date-news {
+  text-align: center;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.news-content {
+  text-align: center;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carrousel-container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.read-more-btn {
+  padding: 10px;
+  background-color: #47b8d6;
+  border: 1px solid #47b8d6;
+  border-radius: 5px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+.read-more-btn:hover {
+  background: #1e81b0;
+  border: 1px solid #1e81b0;
+}
+
+/*our-selection-carrousel*/
+
+.selection-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.selection-title:hover {
+  color: #47b8d6;
+}
+
+.carrousel-items {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.carrousel-item {
+  margin-left: 1rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 450px;
+  scroll-snap-align: start;
+}
+
+.carrousel-img {
+  max-width: 30rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+}
+
+.card-price {
+  display: flex;
+  justify-content: center;
+}
+
+.card-more-info {
+  padding: 8px 15px 8px 15px;
+  background-color: #47b8d6;
+  border: 1px solid #47b8d6;
+  border-radius: 5px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.card-more-info:hover {
+  background: #1e81b0;
+  border: 1px solid #1e81b0;
+}
+
+/*contact*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  color: whitesmoke;
+}
+
+.contact-form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.contact-form input {
+  background: #333;
+  border: 0;
+  border-bottom: 1px solid #555;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  outline: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-form button {
+  display: block;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-weight: 700px;
+  font-size: 1.3;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #47b8d6;
+}
+
+footer {
+  background: #444;
+  padding: 1rem 1rem 1rem 1rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.estimate-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.estimate-title:hover {
+  color: #47b8d6;
+}
+
+.estimate-container {
+  padding: 0 2rem 10rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.online {
+  border-radius: 20px;
+  width: 700px;
+  height: 250px;
+  text-align: center;
+  background-color: white;
+}
+
+.agency {
+  border-radius: 20px;
+  text-align: center;
+  width: 700px;
+  height: 250px;
+  background-color: white;
+}
+
+.content-estimate {
+  margin-top: 30px;
+  margin-left: 10px;
+  color: white;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #1e81b0;
+}
+
+.estimate-offer {
+  padding-top: 30px;
+}
+
+.estimate-agency {
+  border-radius: 10px;
+  padding: 6px;
+  color: white;
+  background-color: #1e81b0;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.estimate-agency:hover {
+  background-color: #47b8d6;
+}
+
+.estimate-online {
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 45px;
+  color: white;
+  background-color: #1e81b0;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.estimate-online:hover {
+  background-color: #47b8d6;
+}

@@ -1,0 +1,61 @@
+/* Mobile first (styles de base) */
+
+/* Petits écrans (téléphones) */
+@media (max-width: 480px) {
+  .name {
+    font-size: 20px;
+    color: white;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .offer-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .estimate-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+/* Tablettes en portrait */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Styles pour les tablettes */
+}
+
+/* Tablettes en paysage et petits laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .estimate-container {
+    gap: 20px;
+  }
+}
+
+/* Ordinateurs et écrans larges */
+@media (min-width: 1025px) {
+  .estimate-container {
+    gap: 20px;
+  }
+}
