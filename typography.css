@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3,
+h4,
+p {
+  font-family: var(--Rubik);
+
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-family: var(--Tenor-sans);
+  font-weight: lighter;
+}
