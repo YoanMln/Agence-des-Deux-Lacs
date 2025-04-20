@@ -8,29 +8,6 @@ body {
   background: #eee;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 1rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-h3,
-p {
-  font-family: var(--Rubik);
-
-  margin-bottom: 0.8rem;
-}
-
-h2 {
-  font-family: var(--Tenor-sans);
-  font-weight: lighter;
-}
-
 ul {
   list-style: none;
 }
@@ -48,7 +25,7 @@ ul {
   margin: 20px 5px;
 }
 
-/*  vp header*/
+/*-----vp-header-----*/
 
 .vp-container {
   min-height: 100vh;
@@ -114,7 +91,7 @@ ul {
   padding: 1rem;
 }
 
-/* info */
+/*-----info-----*/
 
 .container-info {
   max-width: 1200px;
@@ -268,7 +245,85 @@ ul {
   background: #333;
 }
 
-/* review*/
+/*-----estimate-----*/
+
+.estimate-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  transition: 0.2s;
+}
+
+.estimate-title:hover {
+  color: #47b8d6;
+}
+
+.estimate-container {
+  padding: 0 2rem 10rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.online {
+  border-radius: 20px;
+  width: 700px;
+  height: 250px;
+  text-align: center;
+  background-color: white;
+}
+
+.agency {
+  border-radius: 20px;
+  text-align: center;
+  width: 700px;
+  height: 250px;
+  background-color: white;
+}
+
+.content-estimate {
+  margin-top: 30px;
+  margin-left: 10px;
+  color: white;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #1e81b0;
+}
+
+.estimate-offer {
+  padding-top: 30px;
+}
+
+.estimate-agency {
+  border-radius: 10px;
+  padding: 6px;
+  color: white;
+  background-color: #1e81b0;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.estimate-agency:hover {
+  background-color: #47b8d6;
+}
+
+.estimate-online {
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 45px;
+  color: white;
+  background-color: #1e81b0;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.estimate-online:hover {
+  background-color: #47b8d6;
+}
 
 /*-----news-----*/
 
@@ -355,7 +410,7 @@ ul {
   border: 1px solid #1e81b0;
 }
 
-/*our-selection-carrousel*/
+/*-----our-selection-carrousel-----*/
 
 .selection-title {
   display: flex;
@@ -421,7 +476,7 @@ ul {
   border: 1px solid #1e81b0;
 }
 
-/*contact*/
+/*-----contact-----*/
 
 .contact {
   display: flex;
@@ -483,82 +538,4 @@ footer {
 
 footer p {
   margin-bottom: 0;
-}
-
-.estimate-title {
-  display: flex;
-  justify-content: center;
-  font-weight: 300;
-  font-size: 2rem;
-  color: black;
-  transition: 0.2s;
-}
-
-.estimate-title:hover {
-  color: #47b8d6;
-}
-
-.estimate-container {
-  padding: 0 2rem 10rem 2rem;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.online {
-  border-radius: 20px;
-  width: 700px;
-  height: 250px;
-  text-align: center;
-  background-color: white;
-}
-
-.agency {
-  border-radius: 20px;
-  text-align: center;
-  width: 700px;
-  height: 250px;
-  background-color: white;
-}
-
-.content-estimate {
-  margin-top: 30px;
-  margin-left: 10px;
-  color: white;
-  width: 100px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #1e81b0;
-}
-
-.estimate-offer {
-  padding-top: 30px;
-}
-
-.estimate-agency {
-  border-radius: 10px;
-  padding: 6px;
-  color: white;
-  background-color: #1e81b0;
-  display: inline-block;
-  margin-top: 20px;
-  transition: 0.2s;
-}
-
-.estimate-agency:hover {
-  background-color: #47b8d6;
-}
-
-.estimate-online {
-  border-radius: 10px;
-  padding: 6px;
-  margin-top: 45px;
-  color: white;
-  background-color: #1e81b0;
-  display: inline-block;
-  transition: 0.2s;
-}
-
-.estimate-online:hover {
-  background-color: #47b8d6;
 }
