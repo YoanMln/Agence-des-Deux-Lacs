@@ -21,3 +21,9 @@ h2 {
   font-family: var(--Tenor-sans);
   font-weight: lighter;
 }
+
+a.estimate-btn,
+a.estimate-online,
+a.estimate-agency {
+  font-family: var(--Rubik);
+}
