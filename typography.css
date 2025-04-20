@@ -24,6 +24,9 @@ h2 {
 
 a.estimate-btn,
 a.estimate-online,
-a.estimate-agency {
+a.estimate-agency,
+a.buy-btn,
+a.rent-btn,
+a.more-info {
   font-family: var(--Rubik);
 }
