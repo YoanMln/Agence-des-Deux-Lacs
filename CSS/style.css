@@ -6,6 +6,7 @@
 
 body {
   background: #eee;
+  list-style: none;
 }
 
 ul {
@@ -410,7 +411,7 @@ ul {
   border: 1px solid #1e81b0;
 }
 
-/*-----our-selection-carrousel-----*/
+/*-----carrousel-----*/
 
 .selection-title {
   display: flex;
