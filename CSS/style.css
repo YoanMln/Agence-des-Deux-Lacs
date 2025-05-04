@@ -88,8 +88,8 @@ ul {
 }
 
 .logo-img {
-  max-width: 100%;
-  width: 10%;
+  max-width: 5rem;
+
   border-radius: 25px;
   padding: 1rem;
 }
